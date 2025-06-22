@@ -1,0 +1,330 @@
+[
+  {
+    "tema": "TOMOGRAFIA DE CRANIO",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com Trauma Cranioencefálico (TCE)",
+        "perguntas": [
+          {
+            "pergunta": "Pergunta de Decisão Inicial: O paciente é adulto ou criança?",
+            "respostas": [
+              "👨 Adultos",
+              "Pergunta: Qual a gravidade do TCE (Escala de Coma de Glasgow)?",
+              "🚨 TCE Moderado a Grave (GCS ≤ 14)"
+            ]
+          },
+          {
+            "pergunta": "AÇÃO FINAL: TC DE CRÂNIO URGENTE SEM CONTRASTE</strong>",
+            "respostas": [
+              "<em>Considerar <strong>ANGIO-TC</strong> se suspeita de Lesão Cerebrovascular (BCVI).</em>",
+              "⚠️ TCE Leve (GCS 13-15)",
+              "",
+              "<strong>Sinais de Gravidade:</strong>",
+              "GCS < 15 após 2 horas da lesão",
+              "Déficit neurológico focal",
+              "Convulsão pós-trauma",
+              "<strong>Sinais de Fratura:</strong>",
+              "Suspeita de fratura de crânio aberta ou deprimida",
+              "Sinais de fratura de base de crânio (Sinal de Battle, olhos de guaxinim, hemotímpano, fístula liquórica)",
+              "<strong>Sintomas:</strong>",
+              "≥ 2 episódios de vômito",
+              "Amnésia para eventos > 30 min antes do trauma",
+              "Cefaleia intensa",
+              "<strong>Fatores do Paciente:</strong>",
+              "Idade ≥ 65 anos",
+              "Uso de anticoagulantes ou coagulopatia conhecida",
+              "<strong>Mecanismo de Trauma:</strong>",
+              "Pedestre atropelado",
+              "Paciente ejetado de veículo",
+              "Queda de altura (> 1m ou 5 degraus)",
+              ""
+            ]
+          },
+          {
+            "pergunta": "<strong>REALIZAR TC DE CRÂNIO SEM CONTRASTE</strong>.",
+            "respostas": []
+          },
+          {
+            "pergunta": "✅ <strong>OBSERVAÇÃO CLÍNICA SEM TC IMEDIATA</strong>.",
+            "respostas": [
+              "Quando repetir a TC em Adultos?",
+              "",
+              "Houver deterioração neurológica.",
+              "Paciente em uso de anticoagulantes (risco de sangramento tardio).",
+              "Razoável em 6h se hematoma na TC inicial e GCS < 9.",
+              "👶 Crianças",
+              "Pergunta: Qual a gravidade do TCE ou achados clínicos?",
+              "🚨 TCE Grave (GCS ≤ 8) ou Sinais de Alarme Maiores",
+              "",
+              "GCS ≤ 8",
+              "Sinais clínicos de aumento da Pressão Intracraniana (PIC)",
+              "Sinais neurológicos focais",
+              "Convulsão pós-traumática",
+              "Suspeita de Trauma Craniano Abusivo (Não Acidental)",
+              ""
+            ]
+          },
+          {
+            "pergunta": "<strong>TC DE CRÂNIO DE EMERGÊNCIA SEM CONTRASTE</strong>.",
+            "respostas": [
+              "⚠️ TCE Leve (GCS 13-15) - (Lógica PEC"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "REMOVENDO O COLAR CERVICAL",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente Vítima de Trauma (Especialmente com TCE)",
+        "perguntas": [
+          {
+            "pergunta": "ETAPA 01: Atendimento Inicial e Estabilização",
+            "respostas": [
+              "### Princípio fundamental: <strong>PRESUNÇÃO DE LESÃO DE COLUNA VERTEBRAL</strong>",
+              "",
+              "<em>Isso deve ser feito durante todo o transporte e avaliação primária (xABCDE).</em>",
+              "### Situações Específicas Durante a Estabilização:",
+              ""
+            ]
+          },
+          {
+            "pergunta": "Ação: <strong>MANTER IMOBILIZAÇÃO MANUAL DA COLUNA CERVICAL DURANTE O PROCEDIMENTO</strong>.",
+            "respostas": [
+              ""
+            ]
+          },
+          {
+            "pergunta": "Ação: <strong>ELEVAR CABECEIRA A 15-30°</strong>.",
+            "respostas": [
+              "<em>Manter a cabeça sempre em posição neutra/mediana para otimizar a drenagem venosa cerebral.</em>",
+              "<em>Fixar o tubo orotraqueal com fita, nunca amarrado ao redor do pescoço.</em>"
+            ]
+          },
+          {
+            "pergunta": "ETAPA 02: Decisão de Remoção do Colar Cervical",
+            "respostas": [
+              "### Pergunta de Decisão: A lesão grave da coluna cervical foi descartada?",
+              "",
+              "",
+              "<em>Com reconstruções sagitais e coronais.</em>",
+              "",
+              "<em>Incidências: Lateral, AP e Odontoide.</em>",
+              "### Pergunta Final: O exame de imagem descartou lesão significativa?",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "HEMATOMA SUBDURAL AGUDO",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com HSD Agudo em TC de Crânio",
+        "perguntas": [
+          {
+            "pergunta": "Pergunta de Decisão: O hematoma atende a algum critério para evacuação cirúrgica?",
+            "respostas": [
+              "✅ Sim, se apresentar QUALQUER UM dos seguintes:",
+              "<strong>Critérios de Imagem:</strong>",
+              "Espessura do hematoma > 10 mm",
+              "Desvio da Linha Média > 5 mm",
+              "Sinais de compressão de tronco cerebral ou hidrocefalia na TC",
+              "<strong>Critérios Clínicos:</strong>",
+              "Deterioração neurológica progressiva",
+              "Queda na GCS ≥ 2 pontos",
+              "Presença de pupilas anisocóricas ou midríase fixa"
+            ]
+          },
+          {
+            "pergunta": "Conduta: 🚨 <strong>EVACUAÇÃO CIRÚRGICA URGENTE</strong>",
+            "respostas": [
+              "❌ Não, se NENHUM critério acima estiver presente."
+            ]
+          },
+          {
+            "pergunta": "Conduta: ✅ <strong>MANEJO CLÍNICO E OBSERVAÇÃO RIGOROSA</strong>",
+            "respostas": [
+              "<em>Inclui monitoramento da PIC e reavaliação neurológica seriada.</em>",
+              "<em>A consulta com a neurocirurgia é sempre fundamental.</em>"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "HIPERTENSAO INTRACRANIANA",
+    "etapas": []
+  },
+  {
+    "tema": "HEMATOMA INTRACEREBRAL",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com HIC Traumático em TC de Crânio",
+        "perguntas": [
+          {
+            "pergunta": "Pergunta de Decisão: Qual a localização do hematoma?",
+            "respostas": [
+              "Fossa Posterior",
+              "",
+              "<em>(Compressão de tronco, hidrocefalia, apagamento do 4º ventrículo)</em>"
+            ]
+          },
+          {
+            "pergunta": "🚨 <strong>EVACUAÇÃO CIRÚRGICA</strong>",
+            "respostas": []
+          },
+          {
+            "pergunta": "✅ <strong>MANEJO CLÍNICO E OBSERVAÇÃO</strong>",
+            "respostas": [
+              "Supratentorial (Hemisférios Cerebrais)",
+              ""
+            ]
+          },
+          {
+            "pergunta": "<strong>CRANIOTOMIA COM EVACUAÇÃO</strong>",
+            "respostas": [
+              ""
+            ]
+          },
+          {
+            "pergunta": "<strong>CRANIOTOMIA COM EVACUAÇÃO</strong>",
+            "respostas": [
+              "",
+              "✅ <strong>MANEJO CLÍNICO E OBSERVAÇÃO</strong>"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "FRATURA DE CRANIO",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com Fratura de Crânio em TC",
+        "perguntas": [
+          {
+            "pergunta": "Pergunta de Decisão: A fratura é aberta e deprimida com critérios cirúrgicos?",
+            "respostas": [
+              "### ✅ Sim, se houver QUALQUER UM dos seguintes:",
+              "Depressão maior que a espessura do crânio",
+              "Penetração dural evidente",
+              "Contaminação grosseira da ferida",
+              "Hematoma intracraniano significativo associado",
+              "Deformidade cosmética importante",
+              "Envolvimento de seio frontal"
+            ]
+          },
+          {
+            "pergunta": "Conduta: ⚠️ <strong>ELEVAÇÃO E DESBRIDAMENTO CIRÚRGICO</strong>",
+            "respostas": [
+              "### ❌ Não, se for uma fratura linear ou deprimida sem os critérios acima."
+            ]
+          },
+          {
+            "pergunta": "Conduta: ✅ <strong>MANEJO CONSERVADOR E OBSERVAÇÃO</strong>",
+            "respostas": [
+              "<em>(Em crianças, uma fratura que exige cirurgia é considerada uma lesão cerebral importante - ciTBI).</em>"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "HEMATOMA EPIDURAL AGUDO",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com HED em TC de Crânio",
+        "perguntas": [
+          {
+            "pergunta": "Ação Imediata: <strong>CONSULTA NEUROCIRÚRGICA IMEDIATA</strong>",
+            "respostas": []
+          },
+          {
+            "pergunta": "Pergunta de Decisão: O hematoma exige evacuação de emergência?",
+            "respostas": [
+              "### ✅ Sim, se apresentar QUALQUER UM dos seguintes:",
+              "Volume do hematoma > 30 cm³",
+              "Espessura > 15 mm",
+              "Desvio da Linha Média > 5 mm",
+              "<strong>Especialmente se GCS ≤ 8 ou com sinais neurológicos focais.</strong>"
+            ]
+          },
+          {
+            "pergunta": "Conduta: 🚨 <strong>EVACUAÇÃO CIRÚRGICA DE EMERGÊNCIA</strong>",
+            "respostas": [
+              "### ❌ Não, se for pequeno e o paciente estiver clinicamente estável."
+            ]
+          },
+          {
+            "pergunta": "Conduta: ✅ <strong>OBSERVAÇÃO CUIDADOSA EM AMBIENTE MONITORIZADO</strong>",
+            "respostas": [
+              "<em>Com reavaliação por imagem e neurológica seriada.</em>"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "FERIMENTO PENETRANTE DO CRANIO",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com Ferimento Penetrante no Crânio",
+        "perguntas": [
+          {
+            "pergunta": "ETAPA 01: Tratamento da Lesão",
+            "respostas": [
+              "<strong>AÇÃO: DESBRIDAMENTO CIRÚRGICO E FECHAMENTO DURAL</strong>",
+              "<em>Objetivo: Prevenir fístula liquórica e infecção.</em>",
+              "<em>Feridas de entrada pequenas podem ser tratadas com fechamento simples.</em>"
+            ]
+          },
+          {
+            "pergunta": "ETAPA 02: Prevenção de Infecção",
+            "respostas": [
+              "<strong>AÇÃO: INICIAR ANTIBIÓTICOS PROFILÁTICOS DE AMPLO ESPECTRO</strong>"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tema": "MANEJO DO TCE - OTIMIZANDO A PPC",
+    "etapas": []
+  },
+  {
+    "tema": "HEMORRAGIA SUBARACNOIDE TRAUMATICA",
+    "etapas": [
+      {
+        "inicio": "Ponto de Partida: Paciente com HSA Traumática em TC de Crânio",
+        "perguntas": [
+          {
+            "pergunta": "Pergunta de Decisão: Qual a característica da HSA?",
+            "respostas": [
+              "É isolada, pequena e em paciente com TCE Leve?",
+              "",
+              "",
+              "<em>Geralmente é um achado relativamente benigno.</em>",
+              "É extensa, em fossa posterior, intraventricular ou bilateral?",
+              "",
+              "",
+              "<em>Pode indicar lesões mais graves associadas.</em>"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
