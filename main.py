@@ -1,27 +1,71 @@
-from fastapi import FastAPI, Form
-from fastapi.responses import PlainTextResponse
+from flask import Flask, request
+from twilio.twiml.messaging_response import MessagingResponse
+import json
 
-app = FastAPI()
+app = Flask(__name__)
 
-@app.post("/webhook")
-async def whatsapp_webhook(
-    Body: str = Form(...), 
-    From: str = Form(...)
-):
-    # Aqui você pode usar lógica condicional com base no conteúdo da mensagem recebida
-    texto = Body.lower()
+# Carregar os fluxos convertidos
+with open("fluxos_chatbot_convertido.json", "r", encoding="utf-8") as f:
+    fluxos = json.load(f)
 
-    if "hematoma epidural agudo" in texto:
-        return PlainTextResponse("Paciente com hematoma epidural agudo. Apresenta rebaixamento do nível de consciência?")
-    
-    elif "hematoma subdural agudo" in texto:
-        return PlainTextResponse("Paciente com hematoma subdural agudo. Está entubado ou GCS menor que 8?")
-    
-    elif "hipertensao intracraniana" in texto:
-        return PlainTextResponse("Você suspeita de hipertensão intracraniana com base em sinais clínicos ou tomográficos?")
-    
-    elif "fratura de cranio" in texto:
-        return PlainTextResponse("Paciente com fratura de crânio. É aberta ou fechada?")
-    
-    else:
-        return PlainTextResponse("Diagnóstico não reconhecido. Tente novamente com um diagnóstico válido.")
+# Armazena o estado de cada usuário (telefone)
+usuarios = {}
+
+@app.route("/whatsapp", methods=["POST"])
+def whatsapp():
+    telefone = request.form.get("From")
+    msg_usuario = request.form.get("Body").strip().lower()
+
+    resposta = MessagingResponse()
+    mensagem = resposta.message()
+
+    # Se o usuário ainda não escolheu um tema
+    if telefone not in usuarios:
+        if msg_usuario in fluxos:
+            usuarios[telefone] = {
+                "tema": msg_usuario,
+                "etapa": "inicio"
+            }
+            pergunta_atual = fluxos[msg_usuario]["inicio"]["pergunta"]
+            opcoes = fluxos[msg_usuario]["inicio"].get("opcoes", {})
+
+            if opcoes:
+                for opcao in opcoes:
+                    mensagem.buttons.append({"type": "reply", "reply": {"id": opcao, "title": opcao}})
+            else:
+                mensagem.body(pergunta_atual)
+                return str(resposta)
+
+            mensagem.body(pergunta_atual)
+            return str(resposta)
+        else:
+            temas_disponiveis = "\n".join([f"- {t.upper()}" for t in fluxos])
+            mensagem.body(f"Diagnóstico não reconhecido.\n\nEnvie um dos seguintes temas:\n{temas_disponiveis}")
+            return str(resposta)
+
+    # Usuário está navegando em um fluxo
+    estado = usuarios[telefone]
+    tema = estado["tema"]
+    etapa_atual = estado["etapa"]
+    etapa_fluxo = fluxos[tema].get(etapa_atual, {})
+
+    # Interpretar escolha do botão anterior
+    proxima_etapa = etapa_fluxo.get("opcoes", {}).get(msg_usuario)
+    if proxima_etapa:
+        usuarios[telefone]["etapa"] = proxima_etapa
+        etapa_fluxo = fluxos[tema][proxima_etapa]
+        mensagem.body(etapa_fluxo["pergunta"])
+
+        if etapa_fluxo.get("opcoes"):
+            for opcao in etapa_fluxo["opcoes"]:
+                mensagem.buttons.append({"type": "reply", "reply": {"id": opcao, "title": opcao}})
+
+        return str(resposta)
+
+    # Caso escolha inválida
+    mensagem.body("Resposta não reconhecida. Por favor, selecione uma das opções disponíveis.")
+    return str(resposta)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)

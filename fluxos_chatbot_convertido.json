@@ -1,0 +1,164 @@
+{
+  "tomografia de cranio": {
+    "inicio": {
+      "pergunta": "Pergunta de Decisão Inicial: O paciente é adulto ou criança?\n• 👨 Adultos\n• Pergunta: Qual a gravidade do TCE (Escala de Coma de Glasgow)?\n• 🚨 TCE Moderado a Grave (GCS ≤ 14)",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "AÇÃO FINAL: TC DE CRÂNIO URGENTE SEM CONTRASTE\n• Considerar ANGIO-TC se suspeita de Lesão Cerebrovascular (BCVI).\n• ⚠️ TCE Leve (GCS 13-15)\n• Sinais de Gravidade:\n• GCS < 15 após 2 horas da lesão\n• Déficit neurológico focal\n• Convulsão pós-trauma\n• Sinais de Fratura:\n• Suspeita de fratura de crânio aberta ou deprimida\n• Sinais de fratura de base de crânio (Sinal de Battle, olhos de guaxinim, hemotímpano, fístula liquórica)\n• Sintomas:\n• ≥ 2 episódios de vômito\n• Amnésia para eventos > 30 min antes do trauma\n• Cefaleia intensa\n• Fatores do Paciente:\n• Idade ≥ 65 anos\n• Uso de anticoagulantes ou coagulopatia conhecida\n• Mecanismo de Trauma:\n• Pedestre atropelado\n• Paciente ejetado de veículo\n• Queda de altura (> 1m ou 5 degraus)",
+      "opcoes": {
+        "Avançar": "etapa_3"
+      }
+    },
+    "etapa_3": {
+      "pergunta": "REALIZAR TC DE CRÂNIO SEM CONTRASTE.",
+      "opcoes": {
+        "Avançar": "etapa_4"
+      }
+    },
+    "etapa_4": {
+      "pergunta": "✅ OBSERVAÇÃO CLÍNICA SEM TC IMEDIATA.\n• Quando repetir a TC em Adultos?\n• Houver deterioração neurológica.\n• Paciente em uso de anticoagulantes (risco de sangramento tardio).\n• Razoável em 6h se hematoma na TC inicial e GCS < 9.\n• 👶 Crianças\n• Pergunta: Qual a gravidade do TCE ou achados clínicos?\n• 🚨 TCE Grave (GCS ≤ 8) ou Sinais de Alarme Maiores\n• GCS ≤ 8\n• Sinais clínicos de aumento da Pressão Intracraniana (PIC)\n• Sinais neurológicos focais\n• Convulsão pós-traumática\n• Suspeita de Trauma Craniano Abusivo (Não Acidental)",
+      "opcoes": {
+        "Avançar": "etapa_5"
+      }
+    },
+    "etapa_5": {
+      "pergunta": "TC DE CRÂNIO DE EMERGÊNCIA SEM CONTRASTE.\n• ⚠️ TCE Leve (GCS 13-15) - (Lógica PEC",
+      "opcoes": {}
+    }
+  },
+  "removendo o colar cervical": {
+    "inicio": {
+      "pergunta": "ETAPA 01: Atendimento Inicial e Estabilização\n• ### Princípio fundamental: PRESUNÇÃO DE LESÃO DE COLUNA VERTEBRAL\n• Isso deve ser feito durante todo o transporte e avaliação primária (xABCDE).\n• ### Situações Específicas Durante a Estabilização:",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "Ação: MANTER IMOBILIZAÇÃO MANUAL DA COLUNA CERVICAL DURANTE O PROCEDIMENTO.",
+      "opcoes": {
+        "Avançar": "etapa_3"
+      }
+    },
+    "etapa_3": {
+      "pergunta": "Ação: ELEVAR CABECEIRA A 15-30°.\n• Manter a cabeça sempre em posição neutra/mediana para otimizar a drenagem venosa cerebral.\n• Fixar o tubo orotraqueal com fita, nunca amarrado ao redor do pescoço.",
+      "opcoes": {
+        "Avançar": "etapa_4"
+      }
+    },
+    "etapa_4": {
+      "pergunta": "ETAPA 02: Decisão de Remoção do Colar Cervical\n• ### Pergunta de Decisão: A lesão grave da coluna cervical foi descartada?\n• Com reconstruções sagitais e coronais.\n• Incidências: Lateral, AP e Odontoide.\n• ### Pergunta Final: O exame de imagem descartou lesão significativa?",
+      "opcoes": {}
+    }
+  },
+  "hematoma subdural agudo": {
+    "inicio": {
+      "pergunta": "Pergunta de Decisão: O hematoma atende a algum critério para evacuação cirúrgica?\n• ✅ Sim, se apresentar QUALQUER UM dos seguintes:\n• Critérios de Imagem:\n• Espessura do hematoma > 10 mm\n• Desvio da Linha Média > 5 mm\n• Sinais de compressão de tronco cerebral ou hidrocefalia na TC\n• Critérios Clínicos:\n• Deterioração neurológica progressiva\n• Queda na GCS ≥ 2 pontos\n• Presença de pupilas anisocóricas ou midríase fixa",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "Conduta: 🚨 EVACUAÇÃO CIRÚRGICA URGENTE\n• ❌ Não, se NENHUM critério acima estiver presente.",
+      "opcoes": {
+        "Avançar": "etapa_3"
+      }
+    },
+    "etapa_3": {
+      "pergunta": "Conduta: ✅ MANEJO CLÍNICO E OBSERVAÇÃO RIGOROSA\n• Inclui monitoramento da PIC e reavaliação neurológica seriada.\n• A consulta com a neurocirurgia é sempre fundamental.",
+      "opcoes": {}
+    }
+  },
+  "hematoma intracerebral": {
+    "inicio": {
+      "pergunta": "Pergunta de Decisão: Qual a localização do hematoma?\n• Fossa Posterior\n• (Compressão de tronco, hidrocefalia, apagamento do 4º ventrículo)",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "🚨 EVACUAÇÃO CIRÚRGICA",
+      "opcoes": {
+        "Avançar": "etapa_3"
+      }
+    },
+    "etapa_3": {
+      "pergunta": "✅ MANEJO CLÍNICO E OBSERVAÇÃO\n• Supratentorial (Hemisférios Cerebrais)",
+      "opcoes": {
+        "Avançar": "etapa_4"
+      }
+    },
+    "etapa_4": {
+      "pergunta": "CRANIOTOMIA COM EVACUAÇÃO",
+      "opcoes": {
+        "Avançar": "etapa_5"
+      }
+    },
+    "etapa_5": {
+      "pergunta": "CRANIOTOMIA COM EVACUAÇÃO\n• ✅ MANEJO CLÍNICO E OBSERVAÇÃO",
+      "opcoes": {}
+    }
+  },
+  "fratura de cranio": {
+    "inicio": {
+      "pergunta": "Pergunta de Decisão: A fratura é aberta e deprimida com critérios cirúrgicos?\n• ### ✅ Sim, se houver QUALQUER UM dos seguintes:\n• Depressão maior que a espessura do crânio\n• Penetração dural evidente\n• Contaminação grosseira da ferida\n• Hematoma intracraniano significativo associado\n• Deformidade cosmética importante\n• Envolvimento de seio frontal",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "Conduta: ⚠️ ELEVAÇÃO E DESBRIDAMENTO CIRÚRGICO\n• ### ❌ Não, se for uma fratura linear ou deprimida sem os critérios acima.",
+      "opcoes": {
+        "Avançar": "etapa_3"
+      }
+    },
+    "etapa_3": {
+      "pergunta": "Conduta: ✅ MANEJO CONSERVADOR E OBSERVAÇÃO\n• (Em crianças, uma fratura que exige cirurgia é considerada uma lesão cerebral importante - ciTBI).",
+      "opcoes": {}
+    }
+  },
+  "hematoma epidural agudo": {
+    "inicio": {
+      "pergunta": "Ação Imediata: CONSULTA NEUROCIRÚRGICA IMEDIATA",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "Pergunta de Decisão: O hematoma exige evacuação de emergência?\n• ### ✅ Sim, se apresentar QUALQUER UM dos seguintes:\n• Volume do hematoma > 30 cm³\n• Espessura > 15 mm\n• Desvio da Linha Média > 5 mm\n• Especialmente se GCS ≤ 8 ou com sinais neurológicos focais.",
+      "opcoes": {
+        "Avançar": "etapa_3"
+      }
+    },
+    "etapa_3": {
+      "pergunta": "Conduta: 🚨 EVACUAÇÃO CIRÚRGICA DE EMERGÊNCIA\n• ### ❌ Não, se for pequeno e o paciente estiver clinicamente estável.",
+      "opcoes": {
+        "Avançar": "etapa_4"
+      }
+    },
+    "etapa_4": {
+      "pergunta": "Conduta: ✅ OBSERVAÇÃO CUIDADOSA EM AMBIENTE MONITORIZADO\n• Com reavaliação por imagem e neurológica seriada.",
+      "opcoes": {}
+    }
+  },
+  "ferimento penetrante do cranio": {
+    "inicio": {
+      "pergunta": "ETAPA 01: Tratamento da Lesão\n• AÇÃO: DESBRIDAMENTO CIRÚRGICO E FECHAMENTO DURAL\n• Objetivo: Prevenir fístula liquórica e infecção.\n• Feridas de entrada pequenas podem ser tratadas com fechamento simples.",
+      "opcoes": {
+        "Avançar": "etapa_2"
+      }
+    },
+    "etapa_2": {
+      "pergunta": "ETAPA 02: Prevenção de Infecção\n• AÇÃO: INICIAR ANTIBIÓTICOS PROFILÁTICOS DE AMPLO ESPECTRO",
+      "opcoes": {}
+    }
+  },
+  "hemorragia subaracnoide traumatica": {
+    "inicio": {
+      "pergunta": "Pergunta de Decisão: Qual a característica da HSA?\n• É isolada, pequena e em paciente com TCE Leve?\n• Geralmente é um achado relativamente benigno.\n• É extensa, em fossa posterior, intraventricular ou bilateral?\n• Pode indicar lesões mais graves associadas.",
+      "opcoes": {}
+    }
+  }
+}
