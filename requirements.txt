@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-python-multipart
 flask
+twilio
+requests
+python-dotenv
